@@ -1,0 +1,66 @@
+.add-property{
+  font-size: 18px;
+  padding:  10px 5px;
+  color: gray;
+  font-weight: 550;
+}
+
+.stepper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 12px 25px;
+  border-radius: 40px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 920px;
+  margin: 20px auto;
+  position: relative;
+  right: 50px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.circle {
+  background-color: #d1f4ec;
+  color: #000;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+
+.label {
+  color: #999;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.step.active .circle {
+  background-color: #3b9df5;
+  color: white;
+}
+
+.step.active .label {
+  color: #3b9df5;
+}
+
+.step.completed .circle {
+  background-color: #c0f0dc;
+  color: #4caf50;
+}
+
+.step.completed .label {
+  color: #bbb;
+}
